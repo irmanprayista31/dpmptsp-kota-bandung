@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Standar Pelayanan</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="style_standar_pelayanan.css">
+        <link rel="icon" type="image/x-icon" href="component/dpmptsp.ico">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.body.classList.add('fade-in');
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <header>
+                <a href="index.html">
+                    <img src="component/logo.png" alt="DPMPTSP Kota Bandung" href="index.html">
+                </a>
+            </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="standar_pelayanan.html">Standar Pelayanan</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Foto -->
+        <div class="container-fluid p-0">
+            <div class="hero-section position-relative text-center mb-4">
+                <img src="component/bg_std_pelayanan.png" class="img-fluid" alt="Hero Image">
+                <div class="overlay d-flex justify-content-center align-items-center">
+                    <h1>Standar Pelayanan</h1>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Standar Pelayanan -->       
+        <div class="container mt-5">
+            <div class="table-responsive">
+                <table class="display table table-hover">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nama Standar Pelayanan</th>
+                            <th>File</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>SP Izin Radiografer</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Radiografer.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Radiografer.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SP Izin Dokter Spesialis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Spesialis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Spesialis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SP Izin Sanitarian</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Sanitarian.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Sanitarian.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>SP Izin Dokter Umum</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Umum.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Umum.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>SP Izin Teknisi Gigi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Teknisi%20Gigi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Teknisi%20Gigi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>SP Izin Elektromedis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Elektromedis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Elektromedis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>SP Izin Tenaga Gizi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Tenaga%20Gizi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Tenaga%20Gizi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>SP Izin Fisioterapis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Fisioterapis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Fisioterapis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>SP Izin Praktek Mandiri Tenaga Kesehatan Tradisional Jamu</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktek%20Mandiri%20Tenaga%20Kesehatan%20Tradisional%20Jamu.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktek%20Mandiri%20Tenaga%20Kesehatan%20Tradisional%20Jamu.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>SP Izin Khusus Waktu Pelayanan (Bagi Pusat Perbelanjaan dan Toko Swalayan)</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Khusus%20Waktu%20Pelayanan%20(Bagi%20Pusat%20Perbelanjaan%20dan%20Toko%20Swalayan).pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Khusus%20Waktu%20Pelayanan%20(Bagi%20Pusat%20Perbelanjaan%20dan%20Toko%20Swalayan).pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>SP Izin Praktik Teknisi Kardiovaskuler</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Teknisi%20Kardiovaskuler.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Teknisi%20Kardiovaskuler.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>SP Izin Mandiri Akupunktur Terapis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Mandiri%20Akupunktur%20Terapis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Mandiri%20Akupunktur%20Terapis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>SP Izin Program Pendidikan Dokter Spesialis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Program%20Pendidikan%20Dokter%20Spesialis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Program%20Pendidikan%20Dokter%20Spesialis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>SP Izin Mandiri Ortotis Prostestis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Mandiri%20Ortotis%20Prostestis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Mandiri%20Ortotis%20Prostestis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>SP Izin Terapis Gigi dan Mulut</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Terapis%20Gigi%20dan%20Mulut.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Terapis%20Gigi%20dan%20Mulut.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>SP Izin Okupasi Terapis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Okupasi%20Terapis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Okupasi%20Terapis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>SP Izin Praktik Akupuntur Terapis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Akupuntur%20Terapis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Akupuntur%20Terapis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>SP Prioritas OSS</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Prioritas%20OSS.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Prioritas%20OSS.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>SP Izin Operasional Klinik Pratama (Pemerintah non BLU BLUD)</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20Klinik%20Pratama%20(Pemerintah%20non%20BLU%20BLUD).pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20Klinik%20Pratama%20(Pemerintah%20non%20BLU%20BLUD).pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>SP Izin Praktik Dokter Internsip</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Dokter%20Internsip.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Dokter%20Internsip.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>SP PBG</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20PBG.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20PBG.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>SP Izin Operasional Puskesmas (Pemerintah non BLU _ BLUD)</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20Puskesmas%20(Pemerintah%20non%20BLU%20_%20BLUD).pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20Puskesmas%20(Pemerintah%20non%20BLU%20_%20BLUD).pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>SP Izin Praktik Mandiri Dokter Gigi Spesialis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Dokter%20Gigi%20Spesialis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Dokter%20Gigi%20Spesialis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>SP Izin Operasional RS Pemerintah Non BLU _ BLUD(1)</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20RS%20Pemerintah%20Non%20BLU%20_%20BLUD(1).pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20RS%20Pemerintah%20Non%20BLU%20_%20BLUD(1).pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>SP Izin Praktik Mandiri Dokter Spesialis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Dokter%20Spesialis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Dokter%20Spesialis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>SP Izin Operasional RS Pemerintah Non BLU _ BLUD</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20RS%20Pemerintah%20Non%20BLU%20_%20BLUD.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Operasional%20RS%20Pemerintah%20Non%20BLU%20_%20BLUD.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>SP Izin Terapis Wicara</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Terapis%20Wicara.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Terapis%20Wicara.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>SP Izin Optometris</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Optometris.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Optometris.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>SP Izin Tukang Gigi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Tukang%20Gigi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Tukang%20Gigi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>SP Izin Penata Anestesi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penata%20Anestesi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penata%20Anestesi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>SP Izin Refraksionis Efisien</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Refraksionis%20Efisien.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Refraksionis%20Efisien.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>SP Izin Pendirian Satuan PAUD</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20PAUD.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20PAUD.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>SP Izin Praktik Mandiri Fisioterapis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Fisioterapis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Fisioterapis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>SP Izin Pendirian Satuan Pendidikan Dasar - SD</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20Pendidikan%20Dasar%20-%20SD.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20Pendidikan%20Dasar%20-%20SD.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>SP Izin Praktik Mandiri Okupasi Terapis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Okupasi%20Terapis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Okupasi%20Terapis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>SP Izin Pendirian Satuan Pendidikan Dasar SMP</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20Pendidikan%20Dasar%20SMP.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20Pendidikan%20Dasar%20SMP.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>SP Izin Praktik Mandiri Bidan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Bidan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Bidan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>SP Pengaduan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Pengaduan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Pengaduan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>SP Izin Pendirian Satuan Pendidikan Nonformal dan Informal</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20Pendidikan%20Nonformal%20dan%20Informal.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pendirian%20Satuan%20Pendidikan%20Nonformal%20dan%20Informal.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>SP Kartu Pengawasan Angkutan Orang Dalam Trayek</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Kartu%20Pengawasan%20Angkutan%20Orang%20Dalam%20Trayek.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Kartu%20Pengawasan%20Angkutan%20Orang%20Dalam%20Trayek.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>SP Izin Pengelolaan Tempat Parkir</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pengelolaan%20Tempat%20Parkir.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Pengelolaan%20Tempat%20Parkir.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>SP Izin Praktik Mandiri Ortotis Prostestis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Ortotis%20Prostestis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Ortotis%20Prostestis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>SP Izin Penyelenggaraan Reklame Insidentil</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Insidentil.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Insidentil.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>SP Izin Program Pendidikan Dokter Gigi Spesialis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Program%20Pendidikan%20Dokter%20Gigi%20Spesialis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Program%20Pendidikan%20Dokter%20Gigi%20Spesialis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>SP Izin Penyelenggaraan Reklame Kendaraan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Kendaraan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Kendaraan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>46</td>
+                        <td>SP Izin Perawat</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Perawat.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Perawat.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>47</td>
+                        <td>SP Izin Salon Kecantikan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Salon%20Kecantikan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Salon%20Kecantikan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>48</td>
+                        <td>SP Izin Praktik Mandiri Perawat</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Perawat.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Perawat.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>49</td>
+                        <td>SP Revisi IMB</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Revisi%20IMB.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Revisi%20IMB.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>50</td>
+                        <td>SP Izin Penyelenggaraan Reklame Permanen di Bahu Jalan_Berm Jalan_Trotoar, Jembatan, Jalan Layang, Jalan Tol, Jembatan Kereta Api dan Shelter</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Bahu%20Jalan_Berm%20Jalan_Trotoar,%20Jembatan,%20Jalan%20Layang,%20Jalan%20Tol,%20Jembatan%20Kereta%20Api%20dan%20Shelter.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Bahu%20Jalan_Berm%20Jalan_Trotoar,%20Jembatan,%20Jalan%20Layang,%20Jalan%20Tol,%20Jembatan%20Kereta%20Api%20dan%20Shelter.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>51</td>
+                        <td>SP Izin Praktek Tenaga Kesehatan Tradisional Jamu</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktek%20Tenaga%20Kesehatan%20Tradisional%20Jamu.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktek%20Tenaga%20Kesehatan%20Tradisional%20Jamu.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>52</td>
+                        <td>SP Salinan IMB</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Salinan%20IMB.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Salinan%20IMB.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>53</td>
+                        <td>SP Izin Penyelenggaraan Reklame Permanen di Halaman (Persil) dan di Bangunan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Halaman%20(Persil)%20dan%20di%20Bangunan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Halaman%20(Persil)%20dan%20di%20Bangunan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>54</td>
+                        <td>SP Izin Praktek Mandiri Tenaga Kesehatan Tradisional Interkontinental</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktek%20Mandiri%20Tenaga%20Kesehatan%20Tradisional%20Interkontinental.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktek%20Mandiri%20Tenaga%20Kesehatan%20Tradisional%20Interkontinental.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>55</td>
+                        <td>SP Izin Penyelenggaraan Reklame Permanen di Jembatan Penyebrangan Orang dan Bando Jalan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Jembatan%20Penyebrangan%20Orang%20dan%20Bando%20Jalan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Jembatan%20Penyebrangan%20Orang%20dan%20Bando%20Jalan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>56</td>
+                        <td>SP Izin Praktik Mandiri Dokter Umum</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Dokter%20Umum.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Dokter%20Umum.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>57</td>
+                        <td>SP Izin Penyelenggaraan Reklame Permanen di Taman</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Taman.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Penyelenggaraan%20Reklame%20Permanen%20di%20Taman.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>58</td>
+                        <td>SP Permintaan Informasi Publik</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Permintaan%20Informasi%20Publik.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Permintaan%20Informasi%20Publik.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>59</td>
+                        <td>SP Izin Perekam Medis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Perekam%20Medis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Perekam%20Medis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>60</td>
+                        <td>SP Izin Praktik Mandiri Psikolog Klinis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Psikolog%20Klinis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Psikolog%20Klinis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>61</td>
+                        <td>SP Izin Psikolog Klinis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Psikolog%20Klinis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Psikolog%20Klinis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>62</td>
+                        <td>SP Izin Praktik Mandiri Tenaga GIzi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Tenaga%20GIzi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Tenaga%20GIzi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>63</td>
+                        <td>SP Izin Praktik Mandiri Terapis Wicara</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Terapis%20Wicara.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Terapis%20Wicara.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>64</td>
+                        <td>SP Izin Praktik Mandiri Terapis Gigi dan Mulut</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Terapis%20Gigi%20dan%20Mulut.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Praktik%20Mandiri%20Terapis%20Gigi%20dan%20Mulut.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>65</td>
+                        <td>SP Legalisir Izin</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Legalisir%20Izin.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Legalisir%20Izin.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>66</td>
+                        <td>SP Izin Tenaga Teknis Kefarmasian</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Tenaga%20Teknis%20Kefarmasian.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Tenaga%20Teknis%20Kefarmasian.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>67</td>
+                        <td>SP Kartu Pengawasan Angkutan Orang tidak Dalam Trayek</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Kartu%20Pengawasan%20Angkutan%20Orang%20tidak%20Dalam%20Trayek.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Kartu%20Pengawasan%20Angkutan%20Orang%20tidak%20Dalam%20Trayek.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>68</td>
+                        <td>SP Perubahan Data Akun Pemohon</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Perubahan%20Data%20Akun%20Pemohon.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Perubahan%20Data%20Akun%20Pemohon.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>69</td>
+                        <td>SP Praktek Tenaga Kesehatan Tradisional Interkontinental</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Praktek%20Tenaga%20Kesehatan%20Tradisional%20Interkontinental.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Praktek%20Tenaga%20Kesehatan%20Tradisional%20Interkontinental.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>70</td>
+                        <td>SP Revisi IMB Menara Telekomunikasi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Revisi%20IMB%20Menara%20Telekomunikasi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Revisi%20IMB%20Menara%20Telekomunikasi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>71</td>
+                        <td>SP Salinan IMB Menara Telekomunikasi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Salinan%20IMB%20Menara%20Telekomunikasi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Salinan%20IMB%20Menara%20Telekomunikasi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>72</td>
+                        <td>SP Salinan IMB terbit sebelum Agustus 2015 (non online)</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Salinan%20IMB%20terbit%20sebelum%20Agustus%202015%20(non%20online).pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Salinan%20IMB%20terbit%20sebelum%20Agustus%202015%20(non%20online).pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>73</td>
+                        <td>SP Splitzing IMB</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Splitzing%20IMB.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Splitzing%20IMB.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>74</td>
+                        <td>SP Surat Terdaftar Penyehat Tradisional</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Surat%20Terdaftar%20Penyehat%20Tradisional.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Surat%20Terdaftar%20Penyehat%20Tradisional.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>75</td>
+                        <td>SP Berbantuan LKPM</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Berbantuan%20LKPM.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Berbantuan%20LKPM.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>76</td>
+                        <td>SP Berbantuan OSS secara Virtual</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Berbantuan%20OSS%20secara%20Virtual.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Berbantuan%20OSS%20secara%20Virtual.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>77</td>
+                        <td>SP Berbantuan OSS</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Berbantuan%20OSS.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Berbantuan%20OSS.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>78</td>
+                        <td>SP Informasi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Informasi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Informasi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>79</td>
+                        <td>SP Izin Ahli Teknologi Laboratorium Medik</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Ahli%20Teknologi%20Laboratorium%20Medik.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Ahli%20Teknologi%20Laboratorium%20Medik.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>80</td>
+                        <td>SP Izin Apoteker</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Apoteker.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Apoteker.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>81</td>
+                        <td>SP Izin Bidan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Bidan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Bidan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>82</td>
+                        <td>SP Izin Dokter Gigi Spesialis</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Gigi%20Spesialis.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Gigi%20Spesialis.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>83</td>
+                        <td>SP Izin Dokter Gigi</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Gigi.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Gigi.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>84</td>
+                        <td>SP Izin Dokter Hewan</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Hewan.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20Izin%20Dokter%20Hewan.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>85</td>
+                        <td>SP izin Praktik Paramedik Veteriner</td>
+                        <td>
+                            <!-- <a class="btn btn-lg btn-primary" href="https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20izin%20Praktik%20Paramedik%20Veteriner.pdf"  target="_blank">Lihat</a> -->
+                            <a class="btn btn-lg btn-custom" onclick='openPopUp("https://dpmptsp.bandung.go.id/frontdpmp/sp/SP%20izin%20Praktik%20Paramedik%20Veteriner.pdf")'>Lihat</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="modal fade" id="pdfModal" tabindex="-1" role="dialog" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed id="pdfViewer" src="" type="application/pdf" width="100%" height="600px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="contact">
+            <p>Jl. Cianjur No.34, Kacapiring, Kec. Batununggal, Kota Bandung, Jawa Barat 40271</p>
+            <p>Telp. 08112075999 / WA 08112075999</p>
+            <p><a href="mailto:dpmptsp@bandung.go.id">dpmptsp@bandung.go.id</a></p>
+            <div class="social-icons">
+                <a href="mailto:dpmptsp@bandung.go.id"><img src="component/mail.png"><i class="fab fa-email"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+628112075999&text="><img src="component/whatsapp.png"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/people/Dpmptsp-KOTA-Bandung/100068414404344/"><img src="component/facebook.png"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/dpmptsp_bdg"><img src="component/twitter.png"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCwzPaQuOYqD00fPA2iQoujg"><img src="component/youtube.png"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+        <script>
+            function openPopUp(url) {
+                // Set URL PDF ke elemen embed di dalam modal
+                document.getElementById('pdfViewer').setAttribute('src', url);
+                // Tampilkan modal
+                $('#pdfModal').modal('show');
+            }
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#standarPelayananTable').DataTable();
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('.table').DataTable({
+                    paging: true,
+                    lengthChange: false,
+                    searching: true,
+                    ordering: true,
+                    info: true,
+                    autoWidth: true,
+                    pageLength: 10
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,242 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #424242;
+    opacity: 0.1;
+    transition: opacity 0.3s ease-out;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+/* Navbar */
+header { 
+    padding: 10px 5px;
+}
+
+header img { 
+    max-width: 100%;
+}
+
+.navbar-custom { 
+    background-color: #f9f9f9;
+    padding-right: 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #3b3b3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px; 
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.1s ease;
+}
+
+.navbar-nav .nav-link:hover { 
+    transform: scale(1.01);
+    background-color: #1a2f61; 
+    color: #ffffff; 
+}
+
+.navbar-custom .nav-link:active {
+    transform: scale(0.98);
+}
+
+.navbar-toggler {
+    transition: transform 0.3s ease; 
+    border-color: rgba(0, 0, 0, 0.178); 
+    outline: none; 
+    box-shadow: none; 
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none; 
+    box-shadow: none; 
+}
+
+.navbar-toggler:hover {
+    transform: rotate(90deg); 
+}
+
+.navbar-toggler-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Foto */
+.container-fluid { 
+    margin-top: 85px;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    letter-spacing: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+/* Deskripsi */
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 15px;
+}
+
+.row {
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.text-box {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-box p{
+    margin: 20px;
+}
+
+.bg-custom {
+    background-color: #ffffff;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+.card-header {
+    background-color: #f5f5f5;
+}
+
+.card-header h5 {
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.panel {
+    margin-bottom: 15px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+    background-color: #1a2f61;
+    padding: 12px 15px 4px;
+    border-radius: 5px;
+}
+
+.panel-title a {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.panel-title a:hover {
+    text-decoration: none;
+    color: #ffffff; 
+    border-radius: 3px;
+    margin: 0px 3px 0px;
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+.panel-body {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.panel-collapse {
+    transition: height 0.3s ease;
+}
+
+/* Footer */
+.contact { 
+    background-color: #1a2f61;
+    color: #efefef;
+    padding: 20px 0px 5px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact p { 
+    margin: 0px;
+}
+
+.contact a { 
+    color: #efefef;
+}
+
+.contact a:hover { 
+    color: #5bb8f2; 
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+.contact a[href^="mailto:"] {
+    text-decoration: none;
+}
+
+.social-icons img {
+    margin: 20px 5px 10px;
+    width: 26px;
+    height: 26px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.28);
+}
+
+.social-icons img:active {
+    transform: scale(0.8);
+}

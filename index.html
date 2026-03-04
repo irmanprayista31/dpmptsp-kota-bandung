@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DPMPTSP Kota Bandung</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style_index.css">
+        <link rel="icon" type="image/x-icon" href="component/dpmptsp.ico">
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.body.classList.add('fade-in');
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <header>
+                <a href="index.html">
+                    <img src="component/logo.png" alt="DPMPTSP Kota Bandung" href="index.html">
+                </a>
+            </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profil</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="pelayananDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="pelayananDropdown">
+                            <a class="dropdown-item" href="regulasi.html">Regulasi</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="standar_pelayanan.html">Standar Pelayanan</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Foto -->
+        <div class="container-fluid p-0">
+            <div class="hero-section position-relative text-center mb-4">
+                <img src="component/bg_dpmptsp.png" class="img-fluid" alt="Hero Image">
+                <div class="overlay d-flex justify-content-center align-items-center">
+                    <h1>DPMPTSP Kota Bandung</h1>
+                </div>
+            </div>
+
+            <!-- Slider -->
+            <div id="heroCarousel" class="carousel slide hero" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="component/hayu_btn.png" class="d-block w-100" alt="Hayu Perizinan Online">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="component/mpp_btn.png" class="d-block w-100" alt="MPP Digital">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="component/invest_btn.png" class="d-block w-100" alt="Invest Bandung">
+                    </div>
+                    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pilihan Menu -->
+            <div class="row text-center features">
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/survei_ikm.png" class="card-img-top" alt="Survey Kepuasan">
+                        <div class="card-body">
+                            <p class="card-text">Survey Kepuasan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/monitoring.png" class="card-img-top" alt="Monitoring Perizinan">
+                        <div class="card-body">
+                            <p class="card-text">Monitoring Perizinan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/syarat.png" class="card-img-top" alt="Persyaratan Perizinan">
+                        <div class="card-body">
+                            <p class="card-text">Persyaratan Perizinan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="regulasi.html" class="card-link">
+                        <div class="card">
+                            <img src="component/regulasi.png" class="card-img-top" alt="Regulasi">
+                            <div class="card-body">
+                                <p class="card-text">Regulasi</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="pengaduan.html" class="card-link">
+                        <div class="card">
+                            <img src="component/pengaduan.png" class="card-img-top" alt="Pengaduan">
+                            <div class="card-body">
+                                <p class="card-text">Pengaduan</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/peta_digitasi.png" class="card-img-top" alt="Peta Digital">
+                        <div class="card-body">
+                            <p class="card-text">Peta Digital</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="video_tutorial.html" class="card-link">
+                        <div class="card">
+                            <img src="component/video.png" class="card-img-top" alt="Video Tutorial">
+                            <div class="card-body">
+                                <p class="card-text">Video Tutorial</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/oss.png" class="card-img-top" alt="OSS GO.ID">
+                        <div class="card-body">
+                            <p class="card-text">OSS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/sadayana.png" class="card-img-top" alt="Bandung Sadayana">
+                        <div class="card-body">
+                            <p class="card-text">Bandung Sadayana</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/chatbot.png" class="card-img-top" alt="Chatbot">
+                        <div class="card-body">
+                            <p class="card-text">Chatbot</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/mpp_digital.png" class="card-img-top" alt="MPP Digital">
+                        <div class="card-body">
+                            <p class="card-text">MPP Digital</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="component/manual.png" class="card-img-top" alt="Manual Book">
+                        <div class="card-body">
+                            <p class="card-text">Manual Book</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="contact">
+            <p>Jl. Cianjur No.34, Kacapiring, Kec. Batununggal, Kota Bandung, Jawa Barat 40271</p>
+            <p>Telp. 08112075999 / WA 08112075999</p>
+            <p><a href="mailto:dpmptsp@bandung.go.id">dpmptsp@bandung.go.id</a></p>
+            <div class="social-icons">
+                <a href="mailto:dpmptsp@bandung.go.id"><img src="component/mail.png"><i class="fab fa-email"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+628112075999&text="><img src="component/whatsapp.png"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/people/Dpmptsp-KOTA-Bandung/100068414404344/"><img src="component/facebook.png"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/dpmptsp_bdg"><img src="component/twitter.png"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCwzPaQuOYqD00fPA2iQoujg"><img src="component/youtube.png"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </body>
+</html>
